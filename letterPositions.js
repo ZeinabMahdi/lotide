@@ -2,7 +2,7 @@ const letterPositions = function(sentence) {
   const results = {};
   for (let index = 0; index < sentence.length; index++) {
     let letter = sentence.charAt(index);
-    if (letter !== " "){
+    if (letter !== " ") {
       if (results[letter]) {
         results[letter].push(index);
       } else {

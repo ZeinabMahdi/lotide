@@ -4,14 +4,13 @@ const countLetters = function(sentence) {
   const counter = {};
   for (let index of unspaced) {
     if (counter[index]) {
-        counter[index]++; 
-        } else {
-          counter[index] = 1;
-        }
+      counter[index]++;
+    } else {
+      counter[index] = 1;
+    }
   }
- return counter
-
-}
+  return counter;
+};
 
 console.log(countLetters("hello I am zeinab"));
 console.log(countLetters("lighthouse labs"));
