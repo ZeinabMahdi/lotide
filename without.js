@@ -1,6 +1,6 @@
 const without = function(source, itemsToRemove) {
   let newArray = [];
-  for (var i of source){
+  for (let i of source) {
     if (!itemsToRemove.includes(i)) {
       newArray.push(i);
     }
