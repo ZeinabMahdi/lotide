@@ -19,5 +19,16 @@ const countLetters = function(sentence) {
   return counter;
 };
 
-console.log(assertEqual(countLetters("hello I am zeinab"),14));
-console.log(assertEqual(countLetters("lighthouse labs"),14));
+console.log(countLetters("lighthouse in the house"));
+// console.log(assertEqual(countLetters("lighthouse in the house"),{
+//   l: 1,
+//   i: 2,
+//   g: 1,
+//   h: 4,
+//   t: 2,
+//   o: 2,
+//   u: 2,
+//   s: 2,
+//   e: 3,
+//   n: 1,
+// }));
