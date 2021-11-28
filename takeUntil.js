@@ -1,6 +1,19 @@
-/*The function will return a "slice of the array with elements 
-taken from the beginning." It should keep going until the 
-callback/predicate returns a truthy value. */
+const eqArrays = function(arr1, arr2) {
+  for (let i = 0; i <= arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1, arr2)) {
+    console.log(`💚 Assertion passed: ${arr1} === ${arr2}`);
+  } else {
+    console.log(`🛑 Assertion failed: ${arr1} !== ${arr2}`);
+  }
+};
 
 const takeUntil = function(array, callback) {
   for (let index in array) {
