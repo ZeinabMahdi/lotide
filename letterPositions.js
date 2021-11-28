@@ -30,5 +30,5 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(assertArraysEqual(letterPositions("lighthouse in the house").h, [3]));
-console.log(assertArraysEqual(letterPositions("hello").e, [1]));
+console.log(assertArraysEqual(letterPositions("lighthouse in the house").h, [3])); // fail
+console.log(assertArraysEqual(letterPositions("hello").e, [1])); //pass
