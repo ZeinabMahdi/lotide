@@ -7,23 +7,23 @@
 //   }
 // };
 
-const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.length !== arrTwo.length){
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length){
     return false;
   }
-  for (let i = 0; i < arrOne.length; i++) {
-    if (arrOne.length[i] !== arrTwo.length[i]) {
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1.length[i] !== arr2.length[i]) {
       return false;
     }
   }
   return true;
 };
 
-const assertArraysEqual = function(arrOne, arrTwo) {
-  if (eqArrays(arrOne, arrTwo)) {
-    console.log(`💚 Assertion passed: ${arrOne} === ${arrTwo}`);
+const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1, arr2)) {
+    console.log(`💚 Assertion passed: ${arr1} === ${arr2}`);
   } else {
-    console.log(`🛑 Assertion failed: ${arrOne} !== ${arrTwo}`);
+    console.log(`🛑 Assertion failed: ${arr1} !== ${arr2}`);
   }
 };
 
