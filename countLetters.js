@@ -32,3 +32,5 @@ assertEqual(countLetters("lighthouse in the house"),{
   e: 3,
   n: 1,
 });
+
+module.exports = countLetters;

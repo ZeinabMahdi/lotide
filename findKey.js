@@ -27,5 +27,5 @@ const foundKey = findKey({
 
 // => "noma");
 
-console.log(assertEqual(foundKey, "noma"));
+module.exports = findKey;
 
