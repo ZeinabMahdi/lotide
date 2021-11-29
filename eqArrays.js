@@ -18,5 +18,5 @@ const eqArrays = function(arr1, arr2) {
 
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);// => Fail
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => PASS
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);// => FAIL
