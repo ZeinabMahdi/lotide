@@ -8,12 +8,12 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKey = function(object, callback) {
-  let keys = Object.keys(object);
-  for (let key in object) {  
-    if (callback(object[key])){
+  // let keys = Object.keys(object);
+  for (let key in object) {
+    if (callback(object[key])) {
       return key;
-    }  
-  };
+    }
+  }
 };
 
 const foundKey = findKey({
