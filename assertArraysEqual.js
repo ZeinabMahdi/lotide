@@ -19,5 +19,4 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-assertArraysEqual([1,2,3], [1,2,3]); // => should PASS
-assertArraysEqual([1,2,3], [1,5,3]); // => should FAIL
+module.exports = assertArraysEqual;
